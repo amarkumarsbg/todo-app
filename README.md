@@ -23,3 +23,18 @@ JWT for secure auth
 
 Bcrypt for password hashing
 
+
+🔐 Auth Routes (/api/auth)
+POST    /register     → Register a new user
+POST    /login        → Login user and get JWT token
+
+
+Todo Routes (/api/todos)
+ Protected Routes – require JWT token in header
+
+POST    /             → Create a new todo
+GET     /             → Get all todos for logged-in user
+GET     /:id          → Get a single todo by ID
+PUT     /:id          → Update a todo by ID
+DELETE  /:id          → Delete a todo by ID
+
